@@ -1,4 +1,3 @@
-
 import pygame as pg
 
 import pygame, sys, os
@@ -6,8 +5,8 @@ from pygame.locals import *
 pg.init()
 screen = pg.display.set_mode((500, 500))
 clock = pg.time.Clock()
-BG_COLOR = pg.Color('white')
-
+BG_COLOR = pg.Color('black')
+pygame.display.set_caption("Projekt KCK")
 DEFAULT_IMAGE_SIZE = (150, 150)
 
 A = pygame.image.load('A_litera.jpg')
@@ -16,9 +15,51 @@ B = pygame.image.load('B_litera.jpg')
 B = pygame.transform.scale(B, DEFAULT_IMAGE_SIZE)
 C = pygame.image.load('C_litera.jpg')
 C = pygame.transform.scale(C, DEFAULT_IMAGE_SIZE)
+D = pygame.image.load('D_litera.jpg')
+D = pygame.transform.scale(D, DEFAULT_IMAGE_SIZE)
+E = pygame.image.load('E_litera.jpg')
+E = pygame.transform.scale(E, DEFAULT_IMAGE_SIZE)
+F = pygame.image.load('F_litera.jpg')
+F = pygame.transform.scale(F, DEFAULT_IMAGE_SIZE)
+G = pygame.image.load('G_litera.jpg')
+G = pygame.transform.scale(G, DEFAULT_IMAGE_SIZE)
+H = pygame.image.load('H_litera.jpg')
+H = pygame.transform.scale(H, DEFAULT_IMAGE_SIZE)
+I = pygame.image.load('I_litera.jpg')
+I = pygame.transform.scale(I, DEFAULT_IMAGE_SIZE)
+J = pygame.image.load('J_litera.jpg')
+J = pygame.transform.scale(J, DEFAULT_IMAGE_SIZE)
+K = pygame.image.load('K_litera.jpg')
+K = pygame.transform.scale(K, DEFAULT_IMAGE_SIZE)
+L = pygame.image.load('L_litera.jpg')
+L = pygame.transform.scale(L, DEFAULT_IMAGE_SIZE)
+M = pygame.image.load('M_litera.jpg')
+M = pygame.transform.scale(M, DEFAULT_IMAGE_SIZE)
+N = pygame.image.load('N_litera.jpg')
+N = pygame.transform.scale(N, DEFAULT_IMAGE_SIZE)
+O = pygame.image.load('O_litera.jpg')
+O = pygame.transform.scale(O, DEFAULT_IMAGE_SIZE)
+P = pygame.image.load('P_litera.jpg')
+P = pygame.transform.scale(P, DEFAULT_IMAGE_SIZE)
+R = pygame.image.load('R_litera.jpg')
+R = pygame.transform.scale(R, DEFAULT_IMAGE_SIZE)
+S = pygame.image.load('S_litera.jpg')
+S = pygame.transform.scale(S, DEFAULT_IMAGE_SIZE)
+T = pygame.image.load('T_litera.jpg')
+T = pygame.transform.scale(T, DEFAULT_IMAGE_SIZE)
+U = pygame.image.load('U_litera.jpg')
+U = pygame.transform.scale(U, DEFAULT_IMAGE_SIZE)
+W = pygame.image.load('W_litera.jpg')
+W = pygame.transform.scale(W, DEFAULT_IMAGE_SIZE)
+X = pygame.image.load('X_litera.jpg')
+X = pygame.transform.scale(X, DEFAULT_IMAGE_SIZE)
+Y = pygame.image.load('Y_litera.jpg')
+Y = pygame.transform.scale(Y, DEFAULT_IMAGE_SIZE)
+Z = pygame.image.load('Z_litera.jpg')
+Z = pygame.transform.scale(Z, DEFAULT_IMAGE_SIZE)
 
-images = [A, B, C]
-# Three differently colored surfaces for demonstration purposes.
+images = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, R, S, T, U, W, X, Y, Z]
+
 '''
 for zdjecie in (A,B):
     surface = pg.Surface((200, 200))
@@ -34,6 +75,8 @@ pg.time.set_timer(CHANGE_IMAGE_EVENT, 1000)
 
 done = False
 while not done:
+    with open("moje_dane.txt","a") as myfile:
+        myfile.write("start\n")
     for event in pg.event.get():
         if event.type == pg.QUIT:
             done = True
@@ -47,7 +90,7 @@ while not done:
 
     screen.fill(BG_COLOR)
     # Blit the current image.
-    screen.blit(image, (200, 200))
+    screen.blit(image, (175, 175))
     pg.display.flip()
     clock.tick(30)
 
