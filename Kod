@@ -97,8 +97,7 @@ while not done:
         elif event.type == CHANGE_IMAGE_EVENT:
             index += 1
             index %= len(images)
-            image = images[index]  # Alternatively load the next image here.
-
+            image = images[index] 
     screen.fill(BG_COLOR)
 
     screen.blit(image, (175, 175))
