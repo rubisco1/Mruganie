@@ -9,8 +9,7 @@ BG_COLOR = pg.Color('black')
 pygame.display.set_caption("Projekt KCK")
 DEFAULT_IMAGE_SIZE = (150, 150)
 
-stop = pygame.image.load('przerwa.png')
-stop = pygame.transform.scale(stop, DEFAULT_IMAGE_SIZE)
+
 A = pygame.image.load('A_litera.jpg')
 A = pygame.transform.scale(A, DEFAULT_IMAGE_SIZE)
 Ą = pygame.image.load('Ą_litera.jpg')
@@ -78,8 +77,7 @@ Z = pygame.transform.scale(Z, DEFAULT_IMAGE_SIZE)
 Ź = pygame.image.load('Ź_litera.jpg')
 Ź = pygame.transform.scale(Ź, DEFAULT_IMAGE_SIZE)
 
-images = [A, stop, Ą, stop, B, stop, C, stop, Ć, stop, D, stop, E, stop, Ę, stop, F, stop, G, stop, H, stop, I, stop, J, stop, K, stop, L, stop,
- Ł, stop, M, stop ,N, stop, Ń, stop ,O, stop, Ó, stop, P ,stop, R, stop, S, stop, Ś, stop, T, stop, U, stop, W, stop, X, stop, Y, stop, Z, stop, Ż,stop, Ź, stop,]
+images = [A, Ą, B, C, Ć, D, E, Ę, F, G, H, I, J, K, L, Ł, M ,N, Ń, O, Ó, P, R, S, Ś, T, U, W, X, Y, Z, Ż, Ź]
 
 index = 0
 image = images[index]
